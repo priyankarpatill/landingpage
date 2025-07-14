@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  height: 100%;
+  color: white;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  padding: 20px 40px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.meeting-btn {
+  padding: 10px 20px;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url('https://www.super-care.ae/wp-content/uploads/2018/02/4.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+  position: relative;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.contact-btn {
+  background-color: white;
+  color: #a85d23;
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.features {
+  background-color: white;
+  color: #333;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+
+
+
