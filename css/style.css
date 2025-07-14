@@ -108,6 +108,774 @@ body, html {
   padding-top: 130px; /* header height + some space */
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 
 
+/* top section */
+
+   /* body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #222;
+} */
+
+.top-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  background-color: #fff;
+}
+
+.left-image img {
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: start;
+  flex: 1;
+  background: #fff;
+  padding: 40px 20px;
+}
+
+.cards {
+  width: 280px;
+  padding: 20px;
+  margin: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.cards .icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #c1702e;
+}
+
+.cards h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #2f2f2f;
+}
+
+.cards p {
+  font-size: 14px;
+  color: #666;
+}
+
+.who-we-are {
+  padding: 50px 30px;
+  background-color: #fff;
+  text-align: left;
+}
+
+.who-we-are .btn {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  background: transparent;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.who-we-are h2 {
+  font-size: 28px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+
+
+/* who we are */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.who-we-are {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.section-title {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.who-we-are h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 25px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.who-we-are .description {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 80%; /* To match the width in the image */
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Space between the two feature boxes */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.feature-item {
+    flex: 1; /* Distribute space evenly */
+    min-width: 300px; /* Minimum width before wrapping */
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #e0f7fa; /* Light blue background for icon */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    overflow: hidden; /* Hide anything that goes outside the circle during animation */
+    position: relative; /* Needed for absolute positioning if you were to add separate elements, not strictly for this current approach */
+}
+
+.icon-circle i {
+    font-size: 1.5em;
+    color: #007bb5; /* Blue color for icon */
+    /* Apply the animation directly here */
+    animation: iconDropBounce 2s ease-in-out infinite; /* Continuous animation */
+    /* Adjust initial position if needed to make it look like it starts from "above" */
+    transform: translateY(-5px); /* Start slightly above center */
+}
+
+/* Keyframes for the continuous 'iconDropBounce' animation */
+@keyframes iconDropBounce {
+    0% {
+        transform: translateY(-5px); /* Start slightly above center */
+    }
+    25% {
+        transform: translateY(5px); /* Move down slightly */
+    }
+    50% {
+        transform: translateY(-5px); /* Move back up */
+    }
+    75% {
+        transform: translateY(5px); /* Move down slightly again */
+    }
+    100% {
+        transform: translateY(-5px); /* Return to start, creating loop */
+    }
+}
+
+
+.feature-item h2 {
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.feature-item p {
+    font-size: 0.95em;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .who-we-are h1 {
+        font-size: 2em;
+    }
+
+    .who-we-are .description {
+        max-width: 100%;
+    }
+
+    .features {
+        flex-direction: column; /* Stack features vertically on smaller screens */
+    }
+
+    .feature-item {
+        margin-bottom: 20px; /* Add space between stacked items */
+    }
+}
+
+@media (max-width: 480px) {
+    .who-we-are {
+        padding: 25px;
+    }
+
+    .who-we-are h1 {
+        font-size: 1.7em;
+    }
+}
+
+/* service start */
+ 
+/*** service Start ***/
+.service .service-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.service .service-item .service-inner .service-title {
+    position: relative;
+    margin-top: -30px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.service .service-item .service-inner .service-title .service-content {
+    position: absolute;
+    bottom: -100%; 
+    left: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    border-radius: 10px;
+    background: var(--bs-primary);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.service .service-item:hover .service-inner .service-title .service-content {
+    bottom: 0;
+    opacity: 1;
+}
+
+.service .service-item .service-inner .service-title .service-content a h4 {
+    border-bottom: 1px solid rgba(256, 256, 256, .1);
+}
+
+.service .service-item .service-inner .service-title .service-title-name {
+    transition: 0.5s;
+}
+
+.service .service-item:hover .service-inner .service-title .service-title-name {
+    opacity: 0;
+}
+
+.service .service-item .service-inner .service-img {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.service .service-item .service-inner .service-img::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .5);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.service .service-item:hover .service-inner .service-img::after {
+    height: 100%;
+    opacity: 1;
+}
+
+.service .service-item .service-inner .service-img img {
+    transition: 0.5s;
+}
+
+.service .service-item:hover .service-inner .service-img img {
+    transform: scale(1.3);
+}
+/*** Service End ***/
+
+
+/* why section */
+/* body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+} */
+
+
+.card {
+  width: 280px;
+  padding: 20px;
+  margin: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.card .icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #c1702e;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #2f2f2f;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.why-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.why-section h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 20px;
+}
+
+.card {
+  min-width: 350px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 10px;
+  text-align: left;
+  flex-shrink: 0;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.image-wrapper img {
+  width: 100%;
+  border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.image-wrapper .number {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  color: black;
+  padding: 4px 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.card h2 {
+  margin: 15px 10px 10px;
+  font-size: 1.3rem;
+}
+
+.card p {
+  margin: 0 10px 20px;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: black;
+  color: white;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.arrow.left {
+  left: -30px;
+}
+
+.arrow.right {
+  right: -30px;
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto; /* ✅ Make it scrollable */
+  scroll-behavior: smooth; /* ✅ Smooth scroll on arrow click */
+  gap: 20px;
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+/* Hide scrollbar in Chrome */
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* contact section */
+   /* body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f3f3f3;
+} */
+.social-icons a {
+  margin-right: 15px;
+  font-size: 20px;
+  color: #333;
+  text-decoration: none;
+}
+.social-icons a:hover {
+  color: #0077b5; /* LinkedIn blue or adjust as needed */
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 40px;
+  background-color: #f3f3f3;
+  flex-wrap: wrap;
+}
+
+.left-content {
+  flex: 1;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.contact-btn {
+  background-color: white;
+  color: black;
+  padding: 8px 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  cursor: default;
+}
+
+.left-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.left-content p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.left-content hr {
+  margin: 30px 0;
+  border: 1px solid #ddd;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.contact-info span {
+  margin-right: 10px;
+}
+
+.right-form {
+  flex: 1;
+  max-width: 500px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+.right-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-form h2 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.right-form input,
+.right-form select,
+.right-form textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.right-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.checkbox-container {
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.checkbox-container a {
+  color: #c1702e;
+  text-decoration: none;
+}
+
+.submit-btn {
+  background-color: #c1702e;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #a85a1c;
+}
+
+@media (max-width: 1000px) {
+  .contact-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-content,
+  .right-form {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 40px; /* Reduce this value to bring columns closer */
+  background-color: #f5f5f5; /* Optional: light background */
+}
+
+.left-content {
+  flex: 1;
+  max-width: 45%; /* Reduce width if needed */
+}
+
+.right-form {
+  flex: 1;
+  max-width: 45%; /* Reduce width if needed */
+}
+
+.contact-section form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .left-content, .right-form {
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* faq section */
+
+ /* body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+} */
+
+.faq-section {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.explore-btn {
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.faq-heading {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.faq-container {
+  background: #fdf7f1;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+}
+
+.toggle-icon {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  margin-left: 10px;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+  display: none;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-item.active .toggle-icon {
+  content: "×";
+}
+
+
+/* footer */
+ .footer {
+  /* background-color: #0e0f16; */
+  background-color: black;
+  color: white;
+  padding: 60px 0 20px; /* removed side padding */
+  width: 100vw;
+  margin: 0;
+}
+
+.footer-container {
+  width: 100%;
+  margin: 0;
+  padding: 0 60px; /* optional padding inside */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+  margin-top: 20px;
+  padding: 0 20px; /* optional, for inner spacing */
+}
+
+.footer-disclaimer {
+  width: 100%;
+  padding: 0 60px;
+  color: #ccc;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.social-icons {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f39c12;
+}

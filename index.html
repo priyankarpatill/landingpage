@@ -31,12 +31,12 @@
 
     <nav>
       <ul class="nav-links" >
-        <li style="color: white;"><a href="#">About</a></li>
-        <li style="color: white;"><a href="#">Our Products</a></li>
-        <li style="color: white;"><a href="#">About Fixed Rate investment</a></li>
+        <li style="color: white;"><a href="#container">About</a></li>
+        <li style="color: white;"><a href="#container-fluid service overflow-hidden pt-5">Investment Products</a></li>
+        <!-- <li style="color: white;"><a href="#">About Fixed Rate investment</a></li> -->
       </ul>
     </nav>
-    <a href="#" class="meeting-btn">Book A Meeting</a>
+    <a href="#contact-section" class="meeting-btn">Book A Meeting</a>
   </header>
 
   <section class="hero">
@@ -87,9 +87,9 @@
 
  
 
-    <div class="container">
+    <div class="container" id="container">
         <div class="who-we-are">
-            <p class="section-title">WHO WE ARE</p>
+            <p class="section-title">About Us</p>
             <h1>Bespoke investment portfolios built for high-net-worth individuals seeking exclusivity and performance.Opportunities across international markets with transparent reporting and access to global exchanges.</h1>
             <p class="description">
                 At Finaxa Investments, we specialize in partnering with discerning investors to unlock exceptional opportunities across Real Estate, Aviation & Commodities. Bringing forth nearly a decade’s industry expertise, financial capabilities, & operational excellence, we are committed to delivering consistent risk adjusted returns and preserving generational wealth.
@@ -116,154 +116,11 @@
         </div>
     </div>
 
-<style>
- 
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.who-we-are {
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    text-align: left;
-}
-
-.section-title {
-    font-size: 0.9em;
-    color: #777;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-.who-we-are h1 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 25px;
-    line-height: 1.2;
-    font-weight: 600;
-}
-
-.who-we-are .description {
-    font-size: 1em;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 40px;
-    max-width: 80%; /* To match the width in the image */
-}
-
-.features {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px; /* Space between the two feature boxes */
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-}
-
-.feature-item {
-    flex: 1; /* Distribute space evenly */
-    min-width: 300px; /* Minimum width before wrapping */
-    background-color: #fff;
-    padding: 25px;
-    border-radius: 8px;
-}
-
-.icon-circle {
-    width: 50px;
-    height: 50px;
-    background-color: #e0f7fa; /* Light blue background for icon */
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    overflow: hidden; /* Hide anything that goes outside the circle during animation */
-    position: relative; /* Needed for absolute positioning if you were to add separate elements, not strictly for this current approach */
-}
-
-.icon-circle i {
-    font-size: 1.5em;
-    color: #007bb5; /* Blue color for icon */
-    /* Apply the animation directly here */
-    animation: iconDropBounce 2s ease-in-out infinite; /* Continuous animation */
-    /* Adjust initial position if needed to make it look like it starts from "above" */
-    transform: translateY(-5px); /* Start slightly above center */
-}
-
-/* Keyframes for the continuous 'iconDropBounce' animation */
-@keyframes iconDropBounce {
-    0% {
-        transform: translateY(-5px); /* Start slightly above center */
-    }
-    25% {
-        transform: translateY(5px); /* Move down slightly */
-    }
-    50% {
-        transform: translateY(-5px); /* Move back up */
-    }
-    75% {
-        transform: translateY(5px); /* Move down slightly again */
-    }
-    100% {
-        transform: translateY(-5px); /* Return to start, creating loop */
-    }
-}
-
-
-.feature-item h2 {
-    font-size: 1.3em;
-    color: #333;
-    margin-bottom: 10px;
-    font-weight: 600;
-}
-
-.feature-item p {
-    font-size: 0.95em;
-    color: #666;
-    line-height: 1.5;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .who-we-are h1 {
-        font-size: 2em;
-    }
-
-    .who-we-are .description {
-        max-width: 100%;
-    }
-
-    .features {
-        flex-direction: column; /* Stack features vertically on smaller screens */
-    }
-
-    .feature-item {
-        margin-bottom: 20px; /* Add space between stacked items */
-    }
-}
-
-@media (max-width: 480px) {
-    .who-we-are {
-        padding: 25px;
-    }
-
-    .who-we-are h1 {
-        font-size: 1.7em;
-    }
-}
-</style>
 
 
  <!-- Services Start -->
-        <div class="container-fluid service overflow-hidden pt-5">
+        <div class="container-fluid service overflow-hidden pt-5" id="container-fluid service overflow-hidden pt-5">
             <div class="container py-5">
                 <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="sub-style">
@@ -282,9 +139,10 @@
                                 <div class="service-title">
                                     <div class="service-title-name">
                                         <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
-                                            <a href="#" class="h4 text-white mb-0">Investment in Aviation</a>
+                                            <a href="#" class="h4 text-white mb-0">Investment in <br>
+                                                Aviation</a>
                                         </div>
-                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explore More</a>
+                                        <!-- <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explore More</a> -->
                                     </div>
                                     <div class="service-content pb-4">
                                         <a href="#"><h4 class="text-white mb-4 py-3">Investment in Aviation</h4></a>
@@ -310,13 +168,13 @@
                                         <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
                                             <a href="#" class="h4 text-white mb-0">Investment in Real Estate </a>
                                         </div>
-                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explore More</a>
+                                        <!-- <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explore More</a> -->
                                     </div>
                                     <div class="service-content pb-4">
                                         <a href="#"><h4 class="text-white mb-4 py-3">Investment in Real Estate </h4></a>
                                         <div class="px-4">
                                             <p class="mb-4" style="color: white;">Investment Amount              -       AED 2,000,000<br>ROI                                                     upto 20%<br>Minimum Investment:                   AED 2,000,000<br>Period of Investments:                   5 years<br>Approved:                                         yes</p>
-                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="#">Explore More</a>
+                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="#" style="color: white;">Explore More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -335,7 +193,7 @@
                                             <a href="#" class="h4 text-white mb-0">Investment in Commodities
 </a>
                                         </div>
-                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explore More</a>
+                                        <!-- <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explore More</a> -->
                                     </div>
                                     <div class="service-content pb-4">
                                         <a href="#"><h4 class="text-white mb-4 py-3">Investment in Commodities
@@ -349,90 +207,15 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+      
                    
         
-        <!-- Services End -->
-
-<style>
-  
-/*** service Start ***/
-.service .service-item {
-    position: relative;
-    overflow: hidden;
-}
-
-.service .service-item .service-inner .service-title {
-    position: relative;
-    margin-top: -30px;
-    text-align: center;
-    transition: 0.5s;
-}
-
-.service .service-item .service-inner .service-title .service-content {
-    position: absolute;
-    bottom: -100%; 
-    left: 0;
-    margin-left: 30px;
-    margin-right: 30px;
-    text-align: center;
-    border-radius: 10px;
-    background: var(--bs-primary);
-    opacity: 0;
-    transition: 0.5s;
-}
-
-.service .service-item:hover .service-inner .service-title .service-content {
-    bottom: 0;
-    opacity: 1;
-}
-
-.service .service-item .service-inner .service-title .service-content a h4 {
-    border-bottom: 1px solid rgba(256, 256, 256, .1);
-}
-
-.service .service-item .service-inner .service-title .service-title-name {
-    transition: 0.5s;
-}
-
-.service .service-item:hover .service-inner .service-title .service-title-name {
-    opacity: 0;
-}
-
-.service .service-item .service-inner .service-img {
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.service .service-item .service-inner .service-img::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, .5);
-    transition: 0.5s;
-    opacity: 0;
-}
-
-.service .service-item:hover .service-inner .service-img::after {
-    height: 100%;
-    opacity: 1;
-}
-
-.service .service-item .service-inner .service-img img {
-    transition: 0.5s;
-}
-
-.service .service-item:hover .service-inner .service-img img {
-    transform: scale(1.3);
-}
-/*** Service End ***/
+        
 
 
-</style>
 
 
   <section class="why-section">
@@ -443,7 +226,7 @@
         <div class="card">
           <div class="image-wrapper">
             <img src="./img/1.jpg" alt="Transparent">
-            <span class="number">01</span>
+            <!-- <span class="number"></span> -->
           </div>
           <h2>Transparent</h2>
           <p>As a publicly listed bond, Net Asset Value is available at the Vienna Stock Exchange and Bloomberg Terminal.</p>
@@ -451,7 +234,7 @@
         <div class="card">
           <div class="image-wrapper">
             <img src="./img/2.jpg" alt="Global Advantage">
-            <span class="number">02</span>
+            <!-- <span class="number">02</span> -->
           </div>
           <h2>Global Advantage</h2>
           <p>As a listed financial security with an ISIN number, it allows access to bond subscriptions globally.</p>
@@ -459,7 +242,7 @@
         <div class="card">
           <div class="image-wrapper">
             <img src="./img/low.webp" alt="Minimal Risk">
-            <span class="number">03</span>
+            <!-- <span class="number">03</span> -->
           </div>
           <h2>Low Market Volatility</h2>
           <p>As a publicly listed bond, Net Asset Value is available at the Vienna Stock Exchange and Bloomberg Terminal.</p>
@@ -467,7 +250,7 @@
         <div class="card">
           <div class="image-wrapper">
             <img src="./img/regular.webp" alt="Transparent">
-            <span class="number">04</span>
+            <!-- <span class="number">04</span> -->
           </div>
           <h2>Regular Income Stream</h2>
           <p>investment enable efficient portfolio diversification and thus assist in portfolio risk mitigation.</p>
@@ -475,7 +258,7 @@
         <div class="card">
           <div class="image-wrapper">
             <img src="./img/3.jpg" alt="Global Advantage">
-            <span class="number">05</span>
+            <!-- <span class="number">05</span> -->
           </div>
  <h2>Minimal Risk</h2>
           <p>Investors benefit by preserving their invested capital, enabled by the 100% payback of the bond.</p>
@@ -483,7 +266,7 @@
         <div class="card">
           <div class="image-wrapper">
             <img src="./img/proto.webp" alt="Minimal Risk">
-            <span class="number">06</span>
+            <!-- <span class="number">06</span> -->
           </div>
           <h2>Portfolio Diversification</h2>
           <p>investment carry low volatility as compared to equity or mutual fund and other comparable investments.
@@ -494,150 +277,7 @@
       <button class="arrow right">&#10095;</button>
     </div>
   </section>
-<style>
-/* body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-} */
 
-
-.card {
-  width: 280px;
-  padding: 20px;
-  margin: 10px;
-  border-top: 1px solid #ccc;
-}
-
-.card .icon {
-  font-size: 30px;
-  margin-bottom: 10px;
-  color: #c1702e;
-}
-
-.card h3 {
-  font-size: 18px;
-  margin: 10px 0;
-  color: #2f2f2f;
-}
-
-.card p {
-  font-size: 14px;
-  color: #666;
-}
-
-.why-section {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.why-section h1 {
-  font-size: 3rem;
-  margin-bottom: 30px;
-  color: #111;
-}
-
-.carousel-container {
-  position: relative;
-  max-width: 1200px;
-  margin: auto;
-  overflow: hidden;
-}
-
-.carousel {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  gap: 20px;
-}
-
-.card {
-  min-width: 350px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  padding: 10px;
-  text-align: left;
-  flex-shrink: 0;
-}
-
-.image-wrapper {
-  position: relative;
-}
-
-.image-wrapper img {
-  width: 100%;
-  border-radius: 10px;
-  height: 200px;
-  object-fit: cover;
-}
-
-.image-wrapper .number {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: white;
-  color: black;
-  padding: 4px 10px;
-  font-weight: bold;
-  border-radius: 5px;
-  font-size: 18px;
-}
-
-.card h2 {
-  margin: 15px 10px 10px;
-  font-size: 1.3rem;
-}
-
-.card p {
-  margin: 0 10px 20px;
-  color: #555;
-  font-size: 0.95rem;
-}
-
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: black;
-  color: white;
-  border: none;
-  font-size: 28px;
-  cursor: pointer;
-  padding: 8px 16px;
-  border-radius: 50%;
-  z-index: 10;
-}
-
-.arrow.left {
-  left: -30px;
-}
-
-.arrow.right {
-  right: -30px;
-}
-
-.carousel-container {
-  position: relative;
-  max-width: 1200px;
-  margin: auto;
-  overflow: hidden;
-}
-
-.carousel {
-  display: flex;
-  overflow-x: auto; /* ✅ Make it scrollable */
-  scroll-behavior: smooth; /* ✅ Smooth scroll on arrow click */
-  gap: 20px;
-  scrollbar-width: none; /* Hide scrollbar in Firefox */
-}
-
-/* Hide scrollbar in Chrome */
-.carousel::-webkit-scrollbar {
-  display: none;
-}
-
-</style>
   <script>
  const carousel = document.querySelector('.carousel');
 const leftBtn = document.querySelector('.arrow.left');
@@ -658,7 +298,8 @@ leftBtn.addEventListener('click', () => {
 
 
 
- <section class="contact-section">
+ <section id="contact-section" class="contact-section">
+
    <div class="left-content">
   <button class="contact-btn">GET IN TOUCH</button>
   <h1>Interested to know more?</h1>
@@ -739,152 +380,7 @@ leftBtn.addEventListener('click', () => {
       </form>
     </div>
   </section>
-<style>
-    /* body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f3f3f3;
-} */
-.social-icons a {
-  margin-right: 15px;
-  font-size: 20px;
-  color: #333;
-  text-decoration: none;
-}
-.social-icons a:hover {
-  color: #0077b5; /* LinkedIn blue or adjust as needed */
-}
 
-.contact-section {
-  display: flex;
-  justify-content: space-between;
-  padding: 60px 40px;
-  background-color: #f3f3f3;
-  flex-wrap: wrap;
-}
-
-.left-content {
-  flex: 1;
-  max-width: 500px;
-  padding: 20px;
-}
-
-.contact-btn {
-  background-color: white;
-  color: black;
-  padding: 8px 16px;
-  font-weight: bold;
-  border: none;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  cursor: default;
-}
-
-.left-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.left-content p {
-  font-size: 1rem;
-  color: #333;
-}
-
-.left-content hr {
-  margin: 30px 0;
-  border: 1px solid #ddd;
-}
-
-.contact-info p {
-  font-size: 1rem;
-  margin: 10px 0;
-}
-
-.contact-info span {
-  margin-right: 10px;
-}
-
-.right-form {
-  flex: 1;
-  max-width: 500px;
-  background-color: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
-}
-
-.right-form form {
-  display: flex;
-  flex-direction: column;
-}
-
-.right-form h2 {
-  font-size: 1.4rem;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.right-form input,
-.right-form select,
-.right-form textarea {
-  margin-bottom: 15px;
-  padding: 12px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.right-form textarea {
-  resize: vertical;
-  min-height: 100px;
-}
-
-.checkbox-container {
-  font-size: 0.85rem;
-  margin-bottom: 20px;
-}
-
-.checkbox-container input[type="checkbox"] {
-  margin-right: 10px;
-}
-
-.checkbox-container a {
-  color: #c1702e;
-  text-decoration: none;
-}
-
-.submit-btn {
-  background-color: #c1702e;
-  color: white;
-  border: none;
-  padding: 12px;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.submit-btn:hover {
-  background-color: #a85a1c;
-}
-
-@media (max-width: 1000px) {
-  .contact-section {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .left-content,
-  .right-form {
-    max-width: 100%;
-    width: 100%;
-  }
-}
-
-</style>
 
 
  <section class="faq-section">
@@ -938,82 +434,7 @@ leftBtn.addEventListener('click', () => {
       </div>
     </div>
   </section>
-  <style>
-    /* body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #fff;
-} */
-
-.faq-section {
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 20px;
-  text-align: center;
-}
-
-.explore-btn {
-  padding: 10px 20px;
-  background: black;
-  color: white;
-  border: none;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  cursor: pointer;
-}
-
-.faq-heading {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 40px;
-}
-
-.faq-container {
-  background: #fdf7f1;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: left;
-}
-
-.faq-item {
-  border-bottom: 1px solid #ddd;
-  padding: 15px 0;
-  cursor: pointer;
-}
-
-.faq-question {
-  display: flex;
-  justify-content: space-between;
-  font-size: 18px;
-  font-weight: 500;
-  color: #000;
-}
-
-.toggle-icon {
-  font-size: 20px;
-  font-weight: bold;
-  color: #000;
-  margin-left: 10px;
-}
-
-.faq-answer {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #555;
-  display: none;
-}
-
-.faq-item.active .faq-answer {
-  display: block;
-}
-
-.faq-item.active .toggle-icon {
-  content: "×";
-}
-
-
-  </style>
+ 
   <script>const faqItems = document.querySelectorAll(".faq-item");
 
 faqItems.forEach(item => {
@@ -1036,153 +457,72 @@ faqItems.forEach(item => {
 
  
 
-<footer class="footer">
-  <div class="footer-container">
-    <!-- your content -->
-  </div>
 
-  <div class="footer-bottom">
-    <p>© 2025 Finaxa Investments, All Rights Reserved.</p>
-    <div class="social-icons">
-      <!-- Social icons here -->
-    </div>
-  </div>
-</footer>
+   <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4"  style="color: white;">Contact Info</h4>
+                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> 123 Street, New York, USA</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> info@example.com</a>
+                            <a href=""><i class="fas fa-phone me-2"></i> +012 345 67890</a>
+                            <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-share fa-2x text-secondary me-2"></i>
+                                <a class="btn mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Opening Time</h4>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Mon - Friday:</h6>
+                                <p class="text-white mb-0">09.00 am to 07.00 pm</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Satday:</h6>
+                                <p class="text-white mb-0">10.00 am to 05.00 pm</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Vacation:</h6>
+                                <p class="text-white mb-0">All Sunday is our vacation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Our Services</h4>
+                            <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Business</a>
+                            <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Evaluation</a>
+                            <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Migrate</a>
+                            <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Study</a>
+                            <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Counselling</a>
+                            <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Work / Career</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-secondary mb-4">Newsletter</h4>
+                            <p class="text-white mb-3">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="position-relative mx-auto rounded-pill">
+                                <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                                <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
 
-<style>
-    .footer {
-  background-color: #0e0f16;
-  color: white;
-  padding: 60px 0 20px; /* removed side padding */
-  width: 100%;
-  margin: 0;
-}
-
-.footer-container {
-  width: 100%;
-  margin: 0;
-  padding: 0 60px; /* optional padding inside */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 40px;
-}
-
-.footer-bottom {
-  width: 100%;
-  text-align: center;
-  font-size: 12px;
-  color: #888;
-  margin-top: 20px;
-  padding: 0 20px; /* optional, for inner spacing */
-}
-
-.footer-disclaimer {
-  width: 100%;
-  padding: 0 60px;
-  color: #ccc;
-  font-size: 12px;
-  line-height: 1.5;
-}
-
-.social-icons {
-  margin: 20px 0;
-  text-align: center;
-}
-
-.social-icons a {
-  color: #fff;
-  margin: 0 10px;
-  font-size: 1.4rem;
-  transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-  color: #f39c12;
-}
-
-</style>
 
 </body>
 </html>
-<style>
-    /* body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fff;
-  color: #222;
-} */
 
-.top-section {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  background-color: #fff;
-}
-
-.left-image img {
-  width: 100%;
-  max-width: 500px;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.right-content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: start;
-  flex: 1;
-  background: #fff;
-  padding: 40px 20px;
-}
-
-.cards {
-  width: 280px;
-  padding: 20px;
-  margin: 10px;
-  border-top: 1px solid #ccc;
-}
-
-.cards .icon {
-  font-size: 30px;
-  margin-bottom: 10px;
-  color: #c1702e;
-}
-
-.cards h3 {
-  font-size: 18px;
-  margin: 10px 0;
-  color: #2f2f2f;
-}
-
-.cards p {
-  font-size: 14px;
-  color: #666;
-}
-
-.who-we-are {
-  padding: 50px 30px;
-  background-color: #fff;
-  text-align: left;
-}
-
-.who-we-are .btn {
-  padding: 6px 14px;
-  border-radius: 20px;
-  border: 1px solid #ddd;
-  background: transparent;
-  color: #000;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.who-we-are h2 {
-  font-size: 28px;
-  line-height: 1.5;
-  font-weight: 600;
-}
-
-</style>
+ 
